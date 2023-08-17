@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surge UI | Buttons</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/button/button-docs.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/surge-logo.png"
+              alt="surge-ui-brand-logo"
+              style="
+              width: auto;
+              height: 25px;
+          "
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Surge</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AanchalRaj08/Surge-UI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li class="title">
+            <i class="fa-solid fa-book-bookmark title-icon"></i>
+            Getting started
+          </li>
+          <li>
+            <a href="../introduction/introduction.html" 
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html" 
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html" 
+              >Typography</a
+            >
+          </li>
+
+          <li class="title">
+            <i class="fa-solid fa-cubes title-icon"></i>
+            Components
+          </li>
+
+          <li>
+            <a href="../alert/alert.html" >Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html" >Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html" >Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html" class="active"
+              >Button</a
+            >
+          </li>
+          <li>
+            <a href="../card/card.html" >Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html" >Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html" >Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/image.html" 
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="../input/input.html" >Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html" >Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html" >Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html" 
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="../rating/rating.html" >Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html" >Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html" 
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h1 class="fw-600 fs-2">Buttons</h1>
+            <p class="docs-body-para">
+              Buttons are one of the most useful components in any Web
+              Applications. Surge provides different range of buttons and
+              their states.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- Solid Button Starts -->
+
+          <section id="solid" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Solid Buttons</h2>
+            <p class="docs-body-para">
+              Create a solid button using
+              <span class="highlight-text">"btn"</span> class.
+            </p>
+
+            <p class="docs-body-para">
+              Additionally you can add
+              <span class="highlight-text">"btn-primary"</span>,
+              <span class="highlight-text">"btn-secondary"</span>,
+              <span class="highlight-text">"btn-dark"</span>,
+              <span class="highlight-text">"btn-danger"</span>,
+              <span class="highlight-text">"btn-success"</span>, and
+              <span class="highlight-text">"btn-warn"</span> classes to get
+              desired button.g
+            </p>
+
+            <div class="component-container">
+              <button class="btn btn-primary">Primary</button>
+              <button class="btn btn-secondary">Secondary</button>
+              <button class="btn btn-dark">Dark</button>
+              <button class="btn btn-danger">Danger</button>
+              <button class="btn btn-success">Success</button>
+              <button class="btn btn-warn">Warn</button>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-dark%2522%253EDark%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-warn%2522%253EWarn%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Solid Button Ends -->
+
+          <!-- Outline Button Types start -->
+
+          <section id="outline" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Outline Buttons</h2>
+
+            <p class="docs-body-para">
+              To create Outline simply add
+              <span class="highlight-text">"btn-outline"</span> class.
+            </p>
+
+            <div class="button-container component-container">
+              <button class="btn btn-primary btn-outline">Primary</button>
+              <button class="btn btn-secondary btn-outline">Secondary</button>
+              <button class="btn btn-dark btn-outline">Dark</button>
+              <button class="btn btn-danger btn-outline">Danger</button>
+              <button class="btn btn-success btn-outline">Success</button>
+              <button class="btn btn-warn btn-outline">Warn</button>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-outline%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2520btn-outline%2522%253ESecondary%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-dark%2520btn-outline%2522%253EDark%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520btn-outline%2522%253EDanger%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-outline%2522%253ESuccess%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-warn%2520btn-outline%2522%253EWarn%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Outline Button Types end -->
+
+          <!-- Link and Icon Button start -->
+
+          <section id="link-icon" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Icon and Link buttons</h2>
+            <p class="docs-body-para">
+              Create link buttons using
+              <span class="highlight-text">"btn-link"</span> class.
+            </p>
+            <p class="docs-body-para">
+              To create an Icon button you can use
+              <span class="highlight-text">"btn-w-icon"</span> class and add
+              your desired icon inside the parent button tag and include
+              additional span tag for text content.
+            </p>
+            <p class="docs-body-para">
+              Use HTML <span class="highlight-text">"disabled"</span> attribute
+              to create a disabled button.
+            </p>
+
+            <div class="button-container component-container">
+              <button class="btn btn-link">My-Link</button>
+
+              <button class="btn btn-w-icon btn-primary">
+                <i class="fas fa-shopping-cart icon"></i>
+                <span> Add to Cart </span>
+              </button>
+
+              <button class="btn btn-w-icon btn-danger">
+                <span> Delete </span> <i class="fas fa-trash icon"></i>
+              </button>
+
+              <button class="btn btn-primary" disabled>Disabled</button>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%253EMy-Link%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-w-icon%2520btn-primary%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%253E%2520Add%2520to%2520Cart%2520%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-w-icon%2520btn-danger%2522%253E%250A%2520%2520%253Cspan%253E%2520Delete%2520%253C%252Fspan%253E%2520%253Ci%2520class%253D%2522fas%2520fa-trash%2520icon%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520disabled%2522%253EDisabled%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Links and icon Button end -->
+
+          <!-- || Floating icon button start -->
+
+          <section id="floating-icon" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Floating Icon buttons</h2>
+            <p class="docs-body-para">
+              <span class="highlight-text">"btn-floating"</span> class, can be
+              used to create floating button.
+            </p>
+
+            <div class="button-container component-container">
+              <button class="btn btn-primary btn-floating">
+                <i class="fas fa-arrow-up"></i>
+              </button>
+
+              <button class="btn btn-success btn-floating">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-arrow-up%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2520btn-floating%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Floating Icon Button ends -->
+
+          <!-- Button Sizes Starts -->
+
+          <section id="different-sizes" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Different sizes of Buttons</h2>
+            <p class="docs-body-para">
+              Three different sizes are available for buttons. Use
+              <span class="highlight-text">"btn-s"</span> ,
+              <span class="highlight-text">"btn-md"</span> , and
+              <span class="highlight-text">"btn-lg"</span> classes to get small,
+              medium and large sized buttons respectively.
+            </p>
+
+            <div class="button-container component-container">
+              <button class="btn btn-primary btn-s">Small</button>
+              <button class="btn btn-primary btn-md">Button</button>
+              <button class="btn btn-primary btn-lg">Large Button</button>
+            </div>
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-s%2522%253ESmall%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-md%2522%253EButton%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-lg%2522%253ELarge%2520Button%253C%252Fbutton%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Button Sizes Ends -->
+
+          <!-- || Component Footer starts -->
+
+          <footer class="component-footer">
+            <a href="/components/badge/badge.html">
+              <i class="fas fa-angle-double-left"></i> Badge</a
+            >
+            <a href="/components/card/card.html">
+              Cards <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- Component Footer ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2023 Aanchal Raj. All Rights
+              Reserved
+            </p>
+            <ul>
+               <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AanchalRaj08"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/AanchalRaj12"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/aanchalraj"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- Page info side-navbar starts-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li class="title">On This Page</li>
+
+            <li>
+              <a href="#solid" >Solid Button</a>
+            </li>
+
+            <li>
+              <a href="#outline" >Outline</a>
+            </li>
+
+            <li>
+              <a href="#link-icon" >Icon And Link</a>
+            </li>
+
+            <li>
+              <a href="#floating-icon" >Floating Icon</a>
+            </li>
+
+            <li>
+              <a href="#different-sizes" 
+                >Sizes for Buttons</a
+              >
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Page info side-navbar ends-->
+      </main>
+
+      <!-- || Button Components end -->
+    </section>
+
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
+</html>

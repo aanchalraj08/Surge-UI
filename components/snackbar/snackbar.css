@@ -1,0 +1,65 @@
+/* ROOT Variable */
+
+:root {
+  --snackbar-bg: #303030;
+}
+
+/* standard snackbar component starts */
+
+.snackbar {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: var(--spacing-xs);
+  background-color: var(--snackbar-bg);
+  color: var(--lynx-white);
+  border-radius: var(--sm-radius);
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.snackbar button {
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  margin-left: var(--spacing-s);
+}
+
+.snackbar button:hover {
+ transform: scale(1.2);
+}
+
+/* standard snackbar component ends */
+
+/* colors for snackbar starts */
+
+.snackbar.success {
+  background-color: var(--success-light-green);
+  color: var(--success-dark-green);
+}
+
+.snackbar.danger {
+  background-color: var(--error-light-red);
+  color: var(--error-dark-red);
+}
+
+.snackbar.warn {
+  background-color: var(--warn-light-orange);
+  color: var(--warn-dark-orange);
+}
+
+/* colors for snackbar ends */
+
+/* for demo starts */
+
+#demo-snackbar {
+  position: fixed;
+  z-index: 10;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+.display-none {
+  display: none;
+}
+
+/* for demo ends */

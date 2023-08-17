@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surge UI | Cards</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/card/card.css" />
+    <link rel="stylesheet" href="/components/card/card-docs.css" />
+    <link rel="stylesheet" href="/components/avatar/avatar.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+    <link rel="stylesheet" href="/components/badge/badge.css" />
+    <link rel="stylesheet" href="/components/rating/rating.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/surge-logo.png"
+              alt="surge-ui-brand-logo"
+              style="
+              width: auto;
+              height: 25px;
+          "
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Surge</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AanchalRaj08/Surge-UI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li class="title">
+            <i class="fa-solid fa-book-bookmark title-icon"></i>
+            Getting started
+          </li>
+          <li>
+            <a href="../introduction/introduction.html" 
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html" 
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html" 
+              >Typography</a
+            >
+          </li>
+
+          <li class="title">
+            <i class="fa-solid fa-cubes title-icon"></i>
+            Components
+          </li>
+
+          <li>
+            <a href="../alert/alert.html" >Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html" >Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html" >Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html" >Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html" class="active">Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html" >Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html" >Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/image.html" 
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="../input/input.html" >Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html" >Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html" >Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html" 
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="../rating/rating.html" >Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html" >Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html" 
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h1 class="fw-600 fs-2">Cards</h1>
+            <p class="docs-body-para">
+              Cards are used to group related information in a flexible-size
+              container. Visually it resembles with a playing card.
+            </p>
+
+            <p class="docs-body-para">
+              <span class="highlight-text">Note:</span> All Cards provided by
+              Surge have
+              <span class="highlight-text">Same HTML Template</span>, you only
+              need to change the classes to make different card components.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- Standard Cards Starts -->
+
+          <section class="docs-body-section" id="standard">
+            <h2 class="fw-600 fs-3">Standard Card</h2>
+            <p class="docs-body-para">
+              Create a standard card using
+              <span class="highlight-text">"card"</span> class.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black 10x zoom.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+
+                    <p class="price fw-600">₹400</p>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Standard Card ends -->
+
+          <!-- Ecommerce card Starts -->
+
+          <section class="docs-body-section" id="e-commerce">
+            <h2 class="fw-600 fs-3">E-Commerce Card</h2>
+            <p class="docs-body-para">
+              E-commerce card with like buttons are highly useful, easily create
+              one using
+              <span class="highlight-text">"e-com"</span> class.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-ecom">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <button class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </button>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <p class="price fw-600 m-xs">₹400</p>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-ecom%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- E commerce  Card ends -->
+
+          <!-- Card with badge Starts -->
+
+          <section class="docs-body-section" id="badge">
+            <h2 class="fw-600 fs-3">Card with a Badge</h2>
+            <p class="docs-body-para">
+              Card with a Badge can be created using
+              <span class="highlight-text">"card-w-badge"</span> class.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-w-badge">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-w-badge%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Card with a badge ends -->
+
+          <!-- Card with dismiss Starts -->
+
+          <section class="docs-body-section" id="dismissible">
+            <h2 class="fw-600 fs-3">Dismissible Card</h2>
+            <p class="docs-body-para">
+              Use
+              <span class="highlight-text">"card-w-dismiss"</span> class to
+              create dismissible card.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-w-dismiss">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-w-dismiss%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Dismissible Card ends -->
+
+          <!-- Horizontal Card Starts -->
+
+          <section class="docs-body-section" id="horizontal">
+            <h2 class="fw-600 fs-3">Horizontal Card</h2>
+            <p class="docs-body-para">
+              Use
+              <span class="highlight-text">"card-horizontal"</span> class to
+              create horizontal card.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-horizontal">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black 10x zoom.</p>
+                    <p class="price fw-600">₹400</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <button class="qty-btn p-xxs dec">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                      <div class="qty-num p-xxs">3</div>
+                      <button class="qty-btn p-xxs inc">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!-- Horizontal Card ends -->
+
+          <!-- Text Only card Starts -->
+
+          <section class="docs-body-section" id="text-only">
+            <h2 class="fw-600 fs-3">Text Only Card</h2>
+            <p class="docs-body-para">
+              Use
+              <span class="highlight-text">"card-text-only"</span> class to
+              create Text Only card.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-text-only">
+                <div class="card-text-content m-xs">
+                  <p class="card-title">Sony Camera</p>
+
+                  <p class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Enim aliquid deserunt accusantium at odit a aspernatur
+                    error, aperiam reiciendis eligendi ut nisi expedita facilis!
+                    Aspernatur fugiat at similique qui inventore!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-text-only%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!--Text only card ends -->
+
+          <!-- Border card Starts -->
+
+          <section class="docs-body-section" id="border">
+            <h2 class="fw-600 fs-3">Card with border</h2>
+            <p class="docs-body-para">
+              If you want a Border to the card without shadow use
+              <span class="highlight-text">"card-border"</span> class.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card card-border">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520card-border%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!--Card with Border ends -->
+
+          <!-- Single button card Starts -->
+
+          <section class="docs-body-section" id="single-button">
+            <h2 class="fw-600 fs-3">Single button card</h2>
+            <p class="docs-body-para">
+              Use
+              <span class="highlight-text">"single-btn"</span> class to create
+              relatively smaller card.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card single-btn">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520single-btn%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!--Small card ends -->
+
+          <!-- Out of Stock Card Starts -->
+
+          <section class="docs-body-section" id="out-of-stock">
+            <h2 class="fw-600 fs-3">Card with Overlay</h2>
+            <p class="docs-body-para">
+              Use
+              <span class="highlight-text">"disabled"</span> class to create a
+              card with overlay.
+            </p>
+
+            <!-- Component here -->
+
+            <div class="component-container">
+              <div class="card disabled">
+                <header class="card-image">
+                  <img src="/images/camera-image.jpg" alt="product image" />
+                </header>
+
+                <section class="card-body">
+                  <!-- Card icons -->
+
+                  <div class="card-dismiss">
+                    <i class="fa-solid fa-trash fs-5"></i>
+                  </div>
+
+                  <div class="card-like">
+                    <i class="fas fa-heart icon"></i>
+                  </div>
+
+                  <div class="badge-container tag tag-danger">
+                    <span class="icon-badge">New</span>
+                  </div>
+
+                  <div class="card-overlay">Out of Stock</div>
+
+                  <!-- Card icons -->
+
+                  <div class="card-text-content m-xs">
+                    <p class="card-title">Sony Camera</p>
+
+                    <p class="subtitle">Canon Camera E11, Black.</p>
+
+                    <div class="ecom-qty flex flex-center">
+                      <span class="qty-btn fs-3 p-xxs dec"> - </span>
+                      <span class="qty-num p-xxs">3</span>
+                      <span class="qty-btn fs-3 p-xxs inc"> + </span>
+                    </div>
+
+                    <div class="rating s4 fs-6">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <span class="rating-info">4</span>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <footer class="card-actions m-xs">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                  </footer>
+
+                  <!-- buttons -->
+                </section>
+              </div>
+            </div>
+
+            <!-- Component here -->
+
+            <div class="code-container">
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2520disabled%2522%253E%250A%2520%2520%2520%2520%253Cheader%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522%252Fimages%252Fcamera-image.jpg%2522%2520alt%253D%2522product%2520image%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fheader%253E%250A%250A%2520%2520%2520%2520%253Csection%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-dismiss%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-trash%2520fs-5%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-like%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2520icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-container%2520tag%2520tag-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522icon-badge%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-text-content%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card-title%2522%253ESony%2520Camera%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2522%253ECanon%2520Camera%2520E11%252C%2520Black%252010x%2520zoom.%253C%252Fp%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522price%2522%253E%25E2%2582%25B9400%253C%252Fp%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ecom-qty%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520dec%2522%253E%2520-%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-num%2520p-xxs%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522qty-btn%2520fs-3%2520p-xxs%2520inc%2522%253E%2520%252B%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2520s4%2520fs-6%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522far%2520fa-star%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-info%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cfooter%2520class%253D%2522card-actions%2520m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EBuy%2520Now%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253EAdd%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ffooter%253E%250A%2520%2520%2520%2520%253C%252Fsection%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </div>
+          </section>
+
+          <!--Small card ends -->
+
+          <!-- || Component Footer starts -->
+
+          <footer class="component-footer">
+            <a href="/components/button/button.html">
+              <i class="fas fa-angle-double-left"></i> Buttons</a
+            >
+            <a href="/components/chips/chips.html">
+              Chips <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- Component Footer ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2023 Aanchal Raj. All Rights
+              Reserved
+            </p>
+            <ul>
+               <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AanchalRaj08"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/AanchalRaj12"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/aanchalraj"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- Page info side-navbar starts-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li class="title">On This Page</li>
+
+            <li>
+              <a href="#standard" >Standard</a>
+            </li>
+
+            <li>
+              <a href="#e-commerce" >E-commerce</a>
+            </li>
+
+            <li>
+              <a href="#dismissible" >Dismissible</a>
+            </li>
+
+            <li>
+              <a href="#horizontal" >Horizontal</a>
+            </li>
+
+            <li>
+              <a href="#text-only" >Text Only</a>
+            </li>
+
+            <li>
+              <a href="#border" >Border Card</a>
+            </li>
+            <li>
+              <a href="#single-button" >Single Button</a>
+            </li>
+            <li>
+              <a href="#out-of-stock" >Card Overlay</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Page info side-navbar ends-->
+      </main>
+
+      <!-- || Cards Components end -->
+    </section>
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
+</html>

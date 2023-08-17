@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surge UI | Snackbar</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/snackbar/snackbar.css" />
+    <link rel="stylesheet" href="/components/snackbar/snackbar-docs.css" />
+    <link rel="stylesheet" href="/components/button/button.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/surge-logo.png"
+              alt="surge-ui-brand-logo"
+              style="
+              width: auto;
+              height: 25px;
+          "
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Surge</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AanchalRaj08/Surge-UI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li class="title">
+            <i class="fa-solid fa-book-bookmark title-icon"></i>
+            Getting started
+          </li>
+
+          <li>
+            <a href="../introduction/introduction.html" 
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html" 
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html" 
+              >Typography</a
+            >
+          </li>
+          <li class="title">
+            <i class="fa-solid fa-cubes title-icon"></i>
+            Components
+          </li>
+
+          <li>
+            <a href="../alert/alert.html" >Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html" >Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html" >Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html" >Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html" >Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html" >Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html" >Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/image.html" 
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="../input/input.html" >Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html" >Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html" >Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html" 
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="../rating/rating.html" >Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html" >Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html" class="active"
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h1 class="fw-600 fs-2">Snackbars</h1>
+            <p class="docs-body-para">
+              Snackbar is to used show messages, notifications, or some actions
+              that need users attention.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Standard snackbar start -->
+
+          <section id="standard" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Standard Snackbar</h2>
+
+            <p class="docs-body-para">
+              Snackbars can be created using the
+              <span class="highlight-text">"snackbar"</span> class.
+            </p>
+            <div>
+              <button id="demo-snackbar-preview-btn" class="btn btn-primary">
+                Live Preview
+              </button>
+            </div>
+
+            <div class="component-container">
+              <div class="snackbar p-s">
+                <i class="fas fa-check-circle icon"></i>
+                <span>Added to the Cart</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2522%253E%250A%2520%2520%253Cspan%253EAdded%2520to%2520the%2520Cart%253C%252Fspan%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%253Cbutton%253E%250A%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+
+              <!-- iframe ends -->
+            </div>
+
+            <p class="docs-body-para"><strong>JavaScript</strong></p>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=javascript&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=const%2520demoSnackbar%2520%253D%2520document.querySelector%28%2522%2523demo-snackbar%2522%29%253B%250Aconst%2520demoSnackbarCloseBtn%2520%253D%2520document.querySelector%28%2522%2523demo-snackbar-close-btn%2522%29%253B%250Aconst%2520demoSnackbarPreviewBtn%2520%253D%2520document.querySelector%28%2522%2523demo-snackbar-preview-btn%2522%29%253B%250A%250AdemoSnackbarPreviewBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520demoSnackbar.classList.toggle%28%2522display-none%2522%29%253B%250A%257D%29%253B%250AdemoSnackbarCloseBtn.addEventListener%28%2522click%2522%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520demoSnackbar.classList.toggle%28%2522display-none%2522%29%253B%250A%257D%29%253B"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Standard snackbar ends -->
+
+          <!-- ||  types of snackbar start -->
+
+          <section id="types" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Snackbar Types</h2>
+
+            <p class="docs-body-para">
+              Additionally create snackbars for success, danger and warning
+              using
+              <span class="highlight-text">"success"</span>,
+              <span class="highlight-text">"danger"</span> and
+              <span class="highlight-text">"warn"</span> classes.
+            </p>
+
+            <div class="component-container">
+              <div class="snackbar p-s success">
+                <i class="fas fa-check-circle icon"></i>
+                <span>Added to the Cart</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
+              </div>
+
+              <div class="snackbar p-s warn">
+                <i class="fas fa-exclamation-circle icon"></i>
+                <span>Added to the Cart</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
+              </div>
+
+              <div class="snackbar p-s danger">
+                <i class="fas fa-exclamation-circle icon"></i>
+                <span>Added to the Cart</span>
+                <button>
+                  <i class="fas fa-times snackbar-action-close"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="snackbar p-s display-none" id="demo-snackbar">
+              <i class="fas fa-check-circle icon"></i>
+              <span class="heading">Success! Profile Update.</span>
+              <button id="demo-snackbar-close-btn">
+                <i class="fas fa-times snackbar-action-close"></i>
+              </button>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522snackbar%2520success%2522%253E%250A%2520%2520%253Cspan%253ESuccess%21%2520Profile%2520Update.%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520warn%2522%253E%250A%2520%2520%253Cspan%253EWarning%21%2520Privacy%2520at%2520Risk.%2520%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522snackbar%2520danger%2522%253E%250A%2520%2520%253Cspan%253EError%2520Occurred%21%2520Try%2520Again%253C%252Fspan%253E%250A%2520%2520%253Cbutton%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2520snackbar-action-close%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- types of snackbar ends -->
+
+          <footer class="component-footer">
+            <a href="/components/rating/rating.html">
+              <i class="fas fa-angle-double-left"></i> Ratings</a
+            >
+            <a href="/components/text-utilities/text-utilities.html"
+              >Text Utilities <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2023 Aanchal Raj. All Rights
+              Reserved
+            </p>
+            <ul>
+               <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AanchalRaj08"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/AanchalRaj12"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/aanchalraj"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li class="title">On This Page</li>
+
+            <li>
+              <a href="#standard" > Standard Snackbar</a>
+            </li>
+            <li>
+              <a href="#types" > Types of Snackbars</a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </section>
+
+    <script src="/components/snackbar/snackbar.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
+</html>

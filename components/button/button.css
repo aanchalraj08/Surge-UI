@@ -1,0 +1,190 @@
+:root {
+  --primary-btn-hover: #0057d9;
+  --secondary-btn-lightgray: rgb(255, 255, 255); 
+  /* Second Button Background Color update */
+  --secondary-btn-hover: #deebff;
+  /* Second Button Background Color Hover update */
+  --danger-btn-hover: #bc1816;
+  --success-btn-hover: #419544;
+  --warn-btn-hover: #d98200;
+  --dark-btn-hover: #454545;
+  --floating-btn-padding: 1.6rem 2rem;
+  --normal-gray: gray;
+}
+
+/* || Button styling starts */
+
+.btn {
+  background-color: var(--primary-color); 
+  border-radius:50px;
+  color: var(--plain-white);
+  font-size: var(--font-size-h5);
+  padding: 0.75rem 1.25rem;
+  width: fit-content;
+  transition: background-color 0.3s;
+
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* || Button styling ends */
+
+/* || Button Solid starts */
+
+.btn.btn-secondary {
+  color: var(--primary-color);
+  /* Changed Text Color same  as background-color of primary button, from .btn css above*/
+  background-color: var(--secondary-btn-lightgray); 
+  border: 2px solid var(--primary-color);
+  /* Added Border, used border-color same as background-color of first button, from .btn css above */
+}
+.btn.btn-secondary:hover {
+  background-color: var(--secondary-btn-hover);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-btn-hover);
+}
+
+.btn.btn-dark {
+  background-color: var(--dark-color);
+}
+.btn.btn-dark:hover {
+  background-color: var(--dark-btn-hover);
+}
+
+.btn.btn-danger {
+  background-color: var(--red-color);
+}
+.btn.btn-danger:hover {
+  background-color: var(--danger-btn-hover);
+}
+
+.btn.btn-success {
+  background-color: var(--green-color);
+}
+.btn.btn.btn-success:hover {
+  background-color: var(--success-btn-hover);
+}
+
+.btn.btn-warn {
+  color: var(--plain-black);
+  background-color: var(--orange-color);
+}
+.btn.btn.btn-warn:hover {
+  background-color: var(--warn-btn-hover);
+}
+
+/* || Button Solid ends */
+
+/* || Button outline starts */
+
+.btn.btn-outline {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: solid 2px var(--primary-color);
+  padding: 0.55rem 1.25rem;
+}
+.btn.btn-primary.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-secondary.btn.btn-outline {
+  color: var(--plain-black);
+  border: solid 2px var(--secondary-btn-lightgray);
+}
+.btn.btn-secondary.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-dark.btn.btn-outline {
+  color: var(--dark-color);
+  border: solid 2px var(--dark-color);
+}
+.btn.btn-dark.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-danger.btn.btn-outline {
+  color: var(--red-color);
+  border: solid 2px var(--red-color);
+}
+.btn.btn-danger.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-success.btn.btn-outline {
+  color: var(--green-color);
+  border: solid 2px var(--green-color);
+}
+.btn.btn-success.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+.btn.btn-warn.btn.btn-outline {
+  color: var(--orange-color);
+  border: solid 2px var(--orange-color);
+}
+.btn.btn-warn.btn.btn-outline:hover {
+  color: var(--plain-white);
+}
+
+/* || Button outline ends */
+
+/* || Button sizes starts */
+
+.btn.btn-s {
+  padding: 0.5rem 0.75rem;
+  font-size: var(--font-size-h5);
+}
+.btn.btn-lg {
+  font-size: 2rem;
+  padding: 1rem 1.25rem;
+}
+
+/* || Button sizes ends */
+
+/* || Link, Icon Button start */
+
+.btn.btn-link {
+    background-color: inherit;
+    color: var(--primary-color);
+    font-size: var(--font-size-h5);
+    font-weight: 600;
+    border-radius: none;
+    text-decoration: underline 0.5px;
+  }
+  .btn.btn-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline 3px;
+  }
+
+.btn.btn-w-icon .icon {
+    margin: 0 0.6rem;
+}
+
+/* || Link, Icon Button end */
+
+/* || Button floating starts */
+
+.btn.btn-floating {
+  padding: var(--floating-btn-padding);
+  border-radius: var(--round-radius);
+}
+
+/* || Button floating ends */
+
+/* || Button disabled start */
+
+.btn:disabled {
+  background-color: var(--normal-gray);
+  cursor: not-allowed;
+}
+.btn:disabled:hover {
+background-color: var(--normal-gray);
+}
+
+/* || Button disabled end */
+

@@ -1,0 +1,96 @@
+:root {
+    --badge-online-bg: #22c55e;
+}
+
+/* || Avatar with badges start */
+.badge-container {
+    position: relative;
+    width: max-content;
+}
+
+.badge-container .avatar-badge {
+    position: absolute;
+    background-color: var(--plain-gray);
+    height: 1.5rem;
+    width: 1.5rem;
+    bottom: 2px;
+    right: 4px;
+    border-radius: var(--round-radius);
+    border: solid 2px var(--plain-white);
+}
+
+.avatar-badge.online {
+    background-color: var(--badge-online-bg);
+}
+.avatar-badge.offline {
+    background-color: var(--plain-gray);
+}
+.avatar-badge.dnd {
+    background-color: var(--plain-red);
+}
+
+/* || Avatar with badges ends */
+
+/* || Icons with badges starts */
+
+.icon-container .icon {
+    padding: 0.5rem;
+}
+
+.icon-container .icon-badge {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--plain-white);
+    background-color: var(--primary-color);
+    padding: 3px 6px;
+    border-radius: var(--round-radius);
+    top: -10px;
+    right: -5px;
+}
+
+.icon-container.text .icon-badge {
+    top: -1.3rem;
+}
+
+/* || Icons with badges ends */
+
+/* Tag Badges starts*/
+
+.badge-container.tag {
+    padding: 0.5rem 0.75rem;
+    font-size: var(--font-size-h6);
+    border-radius: none;
+    color: var(--plain-black);
+    background-color: var(--plain-lightgray);
+}
+
+.tag.tag-primary {
+    color: var(--plain-white);
+    background-color: var(--primary-color);
+}
+.tag.tag-secondary {
+    color: var(--plain-black);
+    background-color: var(--plain-lightgray);
+}
+.tag.tag-dark {
+    color: var(--plain-white);
+    background-color: var(--dark-color);
+}
+.tag.tag-success {
+    color: var(--plain-white);
+    background-color: var(--green-color);
+}
+.tag.tag-danger {
+    color: var(--plain-white);
+    background-color: var(--red-color);
+}
+.tag.tag-warn {
+    color: var(--plain-white);
+    background-color: var(--orange-color);
+}
+
+.tag.tag-round-border {
+    border-radius: var(--sm-radius);
+}
+
+/* Tag Badges ends*/

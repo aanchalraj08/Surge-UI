@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surge UI | Lists</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/lists/lists.css" />
+    <link rel="stylesheet" href="/components/lists/lists-docs.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/surge-logo.png"
+              alt="surge-ui-brand-logo"
+              style="
+              width: auto;
+              height: 25px;
+          "
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Surge</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AanchalRaj08/Surge-UI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li class="title">
+            <i class="fa-solid fa-book-bookmark title-icon"></i>
+            Getting started
+          </li>
+
+          <li>
+            <a href="../introduction/introduction.html" 
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html" 
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html" 
+              >Typography</a
+            >
+          </li>
+
+          <li class="title">
+            <i class="fa-solid fa-cubes title-icon"></i>
+            Components
+          </li>
+
+          <li>
+            <a href="../alert/alert.html" >Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html" >Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html" >Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html" >Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html" >Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html" >Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html" >Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/image.html" 
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="../input/input.html" >Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html" class="active">Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html" >Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html" 
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="../rating/rating.html" >Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html" >Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html" 
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h1 class="fw-600 fs-2">Lists</h1>
+            <p class="docs-body-para">
+              List groups are a flexible component for displaying a series of
+              content.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || Ordered Lists start -->
+
+          <section id="ordered" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Ordered Lists</h2>
+            <p class="docs-body-para">
+              To create lists use
+              <span class="highlight-text">"list"</span> class, additionally use
+              <span class="highlight-text">"list-roman"</span> or
+              <span class="highlight-text">"list-alpha"</span> class to create
+              desired components.
+            </p>
+
+            <div class="component-container">
+              <ol class="list">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ol>
+
+              <ol reversed class="list">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ol>
+
+              <ol class="list list-roman">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ol>
+
+              <ol class="list list-alpha">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ol>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Col%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253Col%2520reversed%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253Col%2520class%253D%2522list%2520list-roman%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%253Col%2520class%253D%2522list%2520list-alpha%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Fol%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- Ordered List end -->
+
+          <!-- || UnOrdered Lists start -->
+
+          <section id="unordered" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Unordered Lists</h2>
+            <p class="docs-body-para">
+              Along with the
+              <span class="highlight-text">"list"</span> class, you can use
+              <span class="highlight-text">"list-circle"</span>,
+              <span class="highlight-text">"list-square"</span> or
+              <span class="highlight-text">"list-style-none"</span>
+              class to create unordered lists.
+            </p>
+
+            <div class="component-container">
+              <ul class="list">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ul>
+
+              <ul class="list list-circle">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ul>
+
+              <ul class="list list-square">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ul>
+
+              <ul class="list list-style-none">
+                <li>List item1</li>
+                <li>List item2</li>
+                <li>List item3</li>
+              </ul>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=532&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cul%2520class%253D%2522list%2520list-circle%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cul%2520class%253D%2522list%2520list-square%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Ful%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%253Cul%2520class%253D%2522list%2520list-style-none%2522%253E%250A%2520%2520%253Cli%253EList%2520item1%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item2%253C%252Fli%253E%250A%2520%2520%253Cli%253EList%2520item3%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Unordered Lists end -->
+
+          <!-- || Stacked List start -->
+
+          <section id="stacked" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Stacked List.</h2>
+
+            <p class="docs-body-para">
+              Create a using above list styles and utility classes.
+            </p>
+
+            <div class="component-container">
+              <ul class="list list-style-none">
+                <li class="m-xs">
+                  <span class="title">A simple notification 1</span>
+                  <p class="subtitle fs-6 gray-text m-xxxs m-rl0">just now</p>
+                </li>
+
+                <li class="m-xs">
+                  <span class="title">A simple notification 2</span>
+                  <p class="subtitle fs-6 gray-text m-xxxs m-rl0">yesterday</p>
+                </li>
+
+                <li class="m-xs">
+                  <span class="title">A simple notification 3</span>
+                  <p class="subtitle fs-6 gray-text m-xxxs m-rl0">21 Aug</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520list-style-none%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522title%2522%253EA%2520simple%2520notification%25201%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2520fs-6%2520gray-text%2520m-xxxs%2520m-rl0%2522%253Ejust%2520now%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522title%2522%253EA%2520simple%2520notification%25202%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2520fs-6%2520gray-text%2520m-xxxs%2520m-rl0%2522%253Eyesterday%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522m-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522title%2522%253EA%2520simple%2520notification%25203%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2520fs-6%2520gray-text%2520m-xxxs%2520m-rl0%2522%253E21%2520Aug%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Stacked List ends -->
+
+          <footer class="component-footer">
+            <a href="/components/input/input.html">
+              <i class="fas fa-angle-double-left"></i> Input</a
+            >
+            <a href="/components/modal/modal.html">
+              Modal <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- || Input components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2023 Aanchal Raj. All Rights
+              Reserved
+            </p>
+            <ul>
+               <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AanchalRaj08"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/AanchalRaj12"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/aanchalraj"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li class="title">On This Page</li>
+
+            <li>
+              <a href="#ordered" >Ordered</a>
+            </li>
+            <li>
+              <a href="#unordered" >Unordered</a>
+            </li>
+            <li>
+              <a href="#stacked" >Stacked List</a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </section>
+
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
+</html>

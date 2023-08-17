@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surge UI | Inputs</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <link rel="stylesheet" href="/components/input/input.css" />
+    <link rel="stylesheet" href="/documentation/documentation.css" />
+    <link rel="stylesheet" href="/components/input/input.docs.css" />
+
+    <script
+      src="https://kit.fontawesome.com/3582c9ec8a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- || top nav start -->
+
+    <nav class="top-navbar">
+      <div class="nav-wrapper">
+        <div class="top-nav-brand">
+          <a href="/index.html">
+            <img
+              src="/images/surge-logo.png"
+              alt="surge-ui-brand-logo"
+              style="
+              width: auto;
+              height: 25px;
+          "
+            />
+          </a>
+          <a href="/index.html" class="brand-name">Surge</a>
+        </div>
+
+        <ul class="top-nav-links">
+          <li class="inline-list">
+            <a
+              href="https://github.com/AanchalRaj08/Surge-UI"
+              target="_blank"
+              ><i class="fab fa-github h3"></i
+            ></a>
+          </li>
+          <li class="inline-list menu-icon">
+            <i id="hamburger-menu-icon" class="fas fa-bars h3"></i>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- || top nav end -->
+
+    <!-- || Main component Section start -->
+
+    <section class="component-section">
+      <!-- || Side Navbar start -->
+
+      <nav id="hamburger-menu" class="side-navbar">
+        <ul class="ul-side-navbar">
+          <li class="title">
+            <i class="fa-solid fa-book-bookmark title-icon"></i>
+            Getting started
+          </li>
+          <li>
+            <a href="../introduction/introduction.html" 
+              >Installation</a
+            >
+          </li>
+          <li>
+            <a href="../colors-docs/colors.html" 
+              >Colors</a
+            >
+          </li>
+          <li>
+            <a href="../typography-docs/typography.html" 
+              >Typography</a
+            >
+          </li>
+
+          <li class="title">
+            <i class="fa-solid fa-cubes title-icon"></i>
+            Components
+          </li>
+
+          <li>
+            <a href="../alert/alert.html" >Alert</a>
+          </li>
+          <li>
+            <a href="../avatar/avatar.html" >Avatar</a>
+          </li>
+          <li>
+            <a href="../badge/badge.html" >Badge</a>
+          </li>
+          <li>
+            <a href="../button/button.html" >Button</a>
+          </li>
+          <li>
+            <a href="../card/card.html" >Card</a>
+          </li>
+          <li>
+            <a href="../chips/chips.html" >Chips</a>
+          </li>
+          <li>
+            <a href="../grid/grid.html" >Grid</a>
+          </li>
+          <li>
+            <a href="../imageComponent/image.html" 
+              >images</a
+            >
+          </li>
+          <li>
+            <a href="../input/input.html" class="active">Input</a>
+          </li>
+          <li>
+            <a href="../lists/lists.html" >Lists</a>
+          </li>
+          <li>
+            <a href="../modal/modal.html" >Modal</a>
+          </li>
+          <li>
+            <a href="../navigation/navigation.html" 
+              >Navigation</a
+            >
+          </li>
+          <li>
+            <a href="../rating/rating.html" >Rating</a>
+          </li>
+          <li>
+            <a href="../slider/slider.html" >Slider</a>
+          </li>
+          <li>
+            <a href="../snackbar/snackbar.html" 
+              >Snackbar</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- || Side Navbar end -->
+
+      <main>
+        <!-- || Main Component Body -->
+
+        <div class="main-component-body">
+          <!-- || Header area start -->
+
+          <header class="docs-body-header">
+            <h1 class="fw-600 fs-2">Input</h1>
+            <p class="docs-body-para">
+              Form Inputs are very useful for users to input some login/signup
+              data, and they also provide validation.
+            </p>
+          </header>
+
+          <!-- || Header area end -->
+
+          <!-- || standard input start -->
+
+          <section id="standard" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Standard Input</h2>
+            <p class="docs-body-para">
+              Create standard input providing a
+              <span class="highlight-text">"input-wrapper"</span> class to the
+              parent container of input tag.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper">
+                <label class="input-label m-xxxs" for="name">Name</label>
+                <input
+                  class="input p-xs m-xxxs bd-rad-sm"
+                  type="text"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2522%253E%250A%2520%2520%253Clabel%2520class%253D%2522input-label%2522%2520for%253D%2522name%2522%253EName%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522text%2522%2520id%253D%2522name%2522%2520placeholder%253D%2522John%2520Doe%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+          <!-- || standard input end -->
+
+          <!-- || Input Validation start -->
+
+          <section id="validation" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Validation with input</h2>
+            <p class="docs-body-para">
+              To provide validation to the user add
+              <span class="highlight-text">"validation"</span> class along with
+              <span class="highlight-text">"input-wrapper"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div class="input-wrapper success">
+                <label class="m-xxxs" for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                  class="input p-xs m-xxxs bd-rad-sm"
+                />
+                <label class="success-msg m-xxxs">
+                  Success! Email entered is correct.</label
+                >
+              </div>
+
+              <div class="input-wrapper error">
+                <label class="m-xxxs" for="password">Password</label>
+                <input
+                  id="password"
+                  class="input p-xs m-xxxs bd-rad-sm"
+                  type="password"
+                  placeholder="*****"
+                />
+                <label class="error-msg m-xxxs">
+                  Wrong Password. Try again.</label
+                >
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253Clabel%2520for%253D%2522email%2522%253EEmail%253C%252Flabel%253E%250A%2520%253Cinput%250A%2520%2520type%253D%2522text%2522%250A%2520%2520id%253D%2522email%2522%250A%2520%2520placeholder%253D%2522johndoe%2540gmail.com%2522%250A%2520%2520class%253D%2522success-input%2522%250A%2520%2520%252F%253E%250A%2520%253Clabel%2520class%253D%2522success-msg%2522%250A%2520%2520%253E%253Ci%2520class%253D%2522fa-solid%2520fa-circle-check%2522%253E%253C%252Fi%253E%2520Success%21%2520Email%250A%2520%2520entered%2520is%2520correct.%253C%252Flabel%253E%250A%2520%2520%2520%250A%2520%253C%252Fdiv%253E%250A%2520%2520%2520%250A%2520%2520%2520%250A%253Cdiv%2520class%253D%2522input-wrapper%2520validation%2522%253E%250A%2520%2520%2520%250A%2520%253Clabel%2520for%253D%2522password%2522%253EPassword%253C%252Flabel%253E%250A%2520%253Cinput%250A%2520%2520id%253D%2522password%2522%250A%2520%2520class%253D%2522error-input%2522%250A%2520%2520type%253D%2522password%2522%250A%2520%2520placeholder%253D%2522*****%2522%250A%2520%2520%252F%253E%250A%2520%253Clabel%2520class%253D%2522error-msg%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa-solid%2520fa-circle-exclamation%2522%253E%253C%252Fi%253E%2520%250A%2520%2520Wrong%2520Password.%2520Try%2520again.%253C%252Flabel%253E%250A%2520%2520%2520%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Input Validation ends -->
+
+          <!-- || Input with Button start -->
+
+          <section id="input-w-btn" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Input with a Button</h2>
+
+            <p class="docs-body-para">
+              To create searchbar input use
+              <span class="highlight-text">"input-icon"</span> class along with
+              <span class="highlight-text">"input-wrapper"</span> class.
+            </p>
+
+            <div class="component-container">
+              <div
+                class="input-wrapper bd-rad-sm input-w-btn flex flex-row ai-center"
+              >
+                <input
+                  type="text"
+                  class="p-xs input"
+                  placeholder="Apply Coupon Code.."
+                />
+                <button class="p-xs primary-color-text input-btn">Apply</button>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520bd-rad-sm%2520input-w-btn%2520flex%2520flex-row%2520ai-center%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522p-xs%2522%2520placeholder%253D%2522Apply%2520Coupon%2520Code..%2522%2520%252F%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522p-xs%2520primary-color-text%2522%253EApply%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Input with Button ends -->
+
+          <!-- || Radio inputs start -->
+
+          <section id="radio" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Radio inputs</h2>
+
+            <p class="docs-body-para">
+              To create radio inputs use
+              <span class="highlight-text">"radio"</span> class along with
+              <span class="highlight-text">"input-wrapper"</span> class.
+            </p>
+
+            <p class="docs-body-para">
+              Provide
+              <span class="highlight-text">"disabled"</span> class to disable
+              the input.
+            </p>
+
+            <div class="component-container">
+              <div class="radio">
+                <input type="radio" name="unique" id="radio-1" />
+                <label for="radio-1">Radio-1</label>
+              </div>
+
+              <div class="radio">
+                <input type="radio" name="unique" id="radio-2" />
+                <label for="radio-2">Radio-2</label>
+              </div>
+
+              <div class="radio disabled">
+                <input type="radio" name="unique" id="radio-3" disabled />
+                <label for="radio-3">Disabled</label>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-1%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-1%2522%253ERadio-1%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-2%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-2%2522%253ERadio-2%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520radio%2520disabled%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522unique%2522%2520id%253D%2522radio-3%2522%2520disabled%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522radio-3%2522%253EDisabled%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Radio inputs ends -->
+
+          <!-- || checkbox inputs start -->
+
+          <section id="checkbox" class="docs-body-section">
+            <h2 class="fw-600 fs-3">Checkbox inputs</h2>
+
+            <p class="docs-body-para">
+              To create checkbox inputs use
+              <span class="highlight-text">"checkbox"</span> class, only change
+              the type attribute of the input tag to "checkbox".
+            </p>
+
+            <p class="docs-body-para">
+              Provide
+              <span class="highlight-text">"disabled"</span> class to disable
+              the input.
+            </p>
+
+            <div class="component-container">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-1" />
+                <label for="checkbox-1">HTML</label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-2" />
+                <label for="checkbox-2">CSS</label>
+              </div>
+
+              <div class="checkbox disabled">
+                <input type="checkbox" id="checkbox-3" disabled />
+                <label for="checkbox-3">JavaScript</label>
+              </div>
+            </div>
+
+            <div class="code-container">
+              <!-- iframe starts -->
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-1%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-1%2522%253EHTML%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-2%2522%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-2%2522%253ECSS%253C%252Flabel%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522input-wrapper%2520checkbox%2520disabled%2522%253E%250A%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520id%253D%2522checkbox-3%2522%2520disabled%2520%252F%253E%250A%2520%2520%253Clabel%2520for%253D%2522checkbox-3%2522%253EJavaScript%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+              <!-- iframe ends -->
+            </div>
+          </section>
+
+          <!-- || Radio inputs ends -->
+
+          <footer class="component-footer">
+            <a href="/components/imageComponent/image.html">
+              <i class="fas fa-angle-double-left"></i> Images</a
+            >
+            <a href="/components/lists/lists.html">
+              Lists <i class="fas fa-angle-double-right"></i
+            ></a>
+          </footer>
+
+          <!-- || Input components ends -->
+
+          <!-- Footer starts  -->
+
+          <footer class="main-footer">
+            <p class="docs-body-para">
+              <i class="far fa-copyright"></i> 2023 Aanchal Raj. All Rights
+              Reserved
+            </p>
+            <ul>
+               <li>
+                <a
+                  class="footer-link"
+                  href="https://github.com/AanchalRaj08"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://twitter.com/AanchalRaj12"
+                  target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-link"
+                  href="https://www.linkedin.com/in/aanchalraj"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+
+          <!-- Footer ends -->
+        </div>
+
+        <!-- here-->
+
+        <aside class="side-navbar page-info">
+          <ul class="ul-side-navbar">
+            <li class="title">On This Page</li>
+
+            <li>
+              <a href="#standard" >Standard</a>
+            </li>
+            <li>
+              <a href="#validation" >Validation</a>
+            </li>
+            <li>
+              <a href="#input-w-button" 
+                >Input with Button</a
+              >
+            </li>
+            <li>
+              <a href="#radio" >Radio</a>
+            </li>
+            <li>
+              <a href="#checkbox" >Checkbox</a>
+            </li>
+          </ul>
+        </aside>
+      </main>
+    </section>
+
+    <script src="/components/chips/chips.js"></script>
+    <script src="/documentation/JS/documentation.js"></script>
+  </body>
+</html>

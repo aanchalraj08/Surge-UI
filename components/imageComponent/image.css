@@ -1,0 +1,41 @@
+
+.img-150px-wrapper {
+  width: 150px;
+  height: 150px;
+}
+
+/* image style starts */
+
+.img-responsive {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* image style ends */
+
+/* Round Image starts*/
+
+.img-round {
+  width: 100%;
+  border-radius: var(--round-radius);
+}
+
+.small-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+/* Round Image ends*/
+
+/* Square Image starts*/
+.img-square {
+  width: 100%;
+  border-radius: 0;
+}
+/* Square Image ends*/

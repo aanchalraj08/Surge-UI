@@ -1,0 +1,91 @@
+/* Input style  */
+
+:root {
+  --input-shadow: #f1f8ff 0px 0px 0px 4px;
+  --input-success-shadow: #d7ebd8 0px 0px 0px 4px;
+  --input-error-shadow: #f8d1d1 0px 0px 0px 4px;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.input {
+  border: solid 1px var(--plain-lightgray);
+  background-color: var(--lynx-white);
+  width: 100%;
+}
+
+.input:focus {
+  background-color: transparent;
+  outline: none;
+  border: solid 1px var(--lightblue-color);
+  box-shadow: var(--input-shadow);
+}
+
+.input-label {
+  display: block;
+}
+
+/* Input Validation style  */
+
+.input-wrapper .error-msg,
+.input-wrapper .success-msg {
+  display: none;
+}
+
+.input-wrapper.error .input {
+  border: solid 1px var(--red-color);
+}
+
+.input-wrapper.error .input:focus {
+  box-shadow: var(--input-error-shadow);
+}
+
+.input-wrapper.error .error-msg {
+  display: block;
+  color: var(--red-color);
+}
+
+.input-wrapper.success .input {
+  display: block;
+  border: solid 1px var(--green-color);
+}
+
+.input-wrapper.success .input:focus {
+  box-shadow: var(--input-success-shadow);
+}
+
+.input-wrapper.success .success-msg {
+  display: block;
+  color: var(--green-color);
+}
+
+/* Radio  */
+
+.radio.disabled label,
+.checkbox.disabled label {
+  color: var(--plain-gray);
+  cursor: not-allowed;
+}
+
+/* Input w button style  */
+
+.input-w-btn .input {
+  flex-grow: 1;
+  outline: none;
+  border-radius: var(--sm-radius) 0 0 var(--sm-radius);
+}
+
+.input-w-btn .input-btn {
+  border: solid 1px var(--plain-lightgray);
+  border-left: none;
+  border-radius: 0 var(--sm-radius) var(--sm-radius) 0;
+  background-color: var(--plain-white);
+}
+
+.input-w-btn .input-btn:hover {
+  color: var(--plain-white);
+  background-color: var(--primary-color);
+  transition: background-color 0.3s;
+}

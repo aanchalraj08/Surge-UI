@@ -1,0 +1,293 @@
+:root {
+  --card-description-color: #808080;
+}
+
+/* ||------ Standard Card start */
+
+.card {
+  height: max-content;
+  max-width: 26rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: var(--sm-radius);
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+
+/* Card image  */
+
+.card .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: max-content;
+  border-radius: var(--sm-radius) var(--sm-radius) 0 0;
+  border-bottom: solid 1px var(--plain-lightgray);
+}
+
+/* icons */
+
+.card .card-like,
+.card .card-dismiss,
+.card .tag {
+  display: none;
+}
+
+.card .card-like,
+.card .card-dismiss {
+  position: absolute;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  top: var(--spacing-xxs);
+  right: var(--spacing-xxs);
+  color: var(--plain-gray);
+  background-color: var(--plain-white);
+  border-radius: var(--sm-radius);
+  border: solid 1px var(--plain-lightgray);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.card .card-dismiss:hover {
+  color: var(--red-color);
+  border: solid 1px var(--red-color);
+  transition: all 0.3s;
+}
+
+/* Card Text Content */
+
+.card-text-content .card-title {
+  font-size: var(--font-size-h5);
+  font-weight: 600;
+}
+
+.card .subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card-text-content .card-title,
+.card-text-content .subtitle,
+.card-text-content .rating {
+  margin: var(--spacing-xxs) 0;
+}
+
+.card .ecom-qty {
+  width: max-content;
+  border-radius: var(--sm-radius);
+  margin: var(--spacing-xxs) 0;
+}
+
+.card .ecom-qty .qty-btn {
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid var(--plain-lightgray) 1.6px;
+}
+
+.card .ecom-qty .qty-btn.inc {
+  border-radius: 0 5px 5px 0;
+}
+
+.card .ecom-qty .qty-btn.dec {
+  border-radius: 5px 0 0 5px;
+}
+
+.card .ecom-qty .qty-btn:hover {
+  color: var(--primary-color);
+}
+
+.card .ecom-qty .qty-btn:focus {
+  outline: solid 2px var(--lightblue-color);
+}
+
+.card .ecom-qty .qty-btn:disabled {
+  color: lightgray;
+}
+
+.card .ecom-qty .qty-num {
+  border-top: solid var(--plain-lightgray) 1.5px;
+  border-bottom: solid var(--plain-lightgray) 1.5px;
+}
+
+.card .rating,
+.card .ecom-qty,
+.card .price {
+  display: none;
+}
+
+/* || Card footer */
+
+.card .card-actions {
+  display: flex;
+  column-gap: var(--spacing-xxs);
+}
+
+.card.single-btn .card-actions .btn-secondary {
+  display: none;
+}
+
+/* || Standard Card ends */
+
+/* || Card with badges start */
+
+.card.card-w-badge .tag {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  left: -0.2rem;
+}
+
+/* || Card with badge ends*/
+
+/* || Ecom Card starts */
+
+.card.card-ecom .card-like,
+.card.card-ecom .price {
+  display: block;
+}
+
+.card .card-like:hover, 
+.card .card-like.active {
+  color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+  transition: all 0.3s;
+}
+
+.card .card-like:disabled {
+  cursor: not-allowed;
+}
+
+.card .card-like:disabled:hover {
+  color: var(--plain-lightgray);
+  border: solid 1px var(--plain-lightgray);
+}
+
+.card.card-ecom .card-text-content .rating {
+  display: block;
+}
+
+.card.card-ecom .card-actions {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card.card-ecom .btn-primary {
+  width: 100%;
+}
+
+.card.card-ecom .btn-secondary {
+  display: none;
+}
+
+/* || Ecom Card ends */
+
+/* || Card with dismiss icon starts  */
+
+.card.card-w-dismiss .card-like {
+  display: none;
+}
+
+.card.card-w-dismiss .card-dismiss {
+  display: block;
+}
+
+/* || Card with dismiss icon ends */
+
+/* || Card with text only starts*/
+
+.card.card-text-only .card-image,
+.card.card-text-only .card-actions,
+card.card.card-text-only .price {
+  display: none;
+}
+
+/* || Card with text only ends*/
+
+/* || Horizontal card starts*/
+
+.card.card-horizontal {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+}
+
+.card.card-horizontal .card-image {
+  max-width: 13.5rem;
+  height: 100%;
+  flex-shrink: 2;
+}
+
+.card.card-horizontal .card-image img {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card.card.card-horizontal .card-text-content {
+  min-width: 185px;
+}
+
+.card.card-horizontal .card-actions {
+  display: none;
+}
+
+.card.card-horizontal .ecom-qty {
+  display: flex;
+}
+
+.card.card-horizontal .price {
+  display: block;
+  margin: var(--spacing-xxs) 0;
+}
+
+.card.card-horizontal .card-like {
+  display: block;
+  bottom: 1.2rem;
+  right: 1.2rem;
+  top: auto;
+}
+
+.card.card-horizontal .card-dismiss {
+  display: block;
+  bottom: 1.2rem;
+  right: 6rem;
+  top: auto;
+}
+
+/* || Horizontal card ends*/
+
+/* || Card Overlay starts */
+
+.card .card-overlay {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: var(--plain-white);
+  font-weight: bold;
+  font-size: var(--font-size-h3);
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--md-radius);
+}
+
+.card.disabled .card-overlay {
+  display: flex;
+}
+
+/* || Card Overlay ends */
+
+/* || Card Border starts*/
+
+.card.card-border {
+  box-shadow: none;
+  border: solid var(--plain-lightgray) 1px;
+}
+
+/* || Card Border ends*/

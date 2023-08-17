@@ -1,0 +1,85 @@
+/* alert styles start */
+
+.alert {
+  width: 100%;
+  max-width: 40em;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* .getting-started-flex{
+  display:flex;
+} */
+
+ 
+.alert .icon {
+  font-size: var(--font-size-h3);
+}
+
+/* || Alert Color styles  */
+
+/* success */
+.alert.alert-success {
+  background-color: var(--success-light-green);
+}
+.alert-success .fa-check-circle {
+  color: var(--success-dark-green);
+}
+
+/* error */
+.alert.alert-error {
+  background-color: var(--error-light-red);
+}
+.alert-error .fa-exclamation-circle {
+  color: var(--error-dark-red);
+}
+
+/* info */
+.alert.alert-info {
+  background-color: var(--info-light-blue);
+}
+.alert-info .fa-info-circle {
+  color: var(--info-dark-blue);
+}
+
+/* warn */
+.alert.alert-warn {
+  background-color: var(--warn-light-orange);
+}
+.alert-warn .fa-exclamation-circle {
+  color: var(--warn-dark-orange);
+}
+
+/* alert color ends */
+
+/* || For Dissmisible alert btn starts */
+
+.alert .alert-dismissible-icon {
+  margin-left: auto;
+  cursor: pointer;
+}
+.alert .alert-dismissible-icon:hover {
+  transform: scale(1.25);
+}
+
+/* || For Dissmisible alert btn ends */
+
+/* || Alert with aditional text starts */
+
+.alert.alert-w-additional-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.alert.alert-w-additional-text .icon {
+  font-size: var(--font-size-h2);
+}
+
+/* || Alert with aditional text ends*/
